@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Shopping Cart</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body class="bg-neutral-100 mx-auto">
+    <section class="flex overflow-hidden flex-col px-20 pt-7 pb-32 max-w-[1920px] mx-auto max-md:px-5 max-md:pb-24">
+        <header class="flex flex-wrap gap-10 items-center max-md:mr-1 max-md:max-w-full">
+            <img loading="lazy" src="https://cdn.builder.io/api/v1/image/assets/TEMP/a04a2b749e4988c60373041032c5d96c122ea05ef9806c14983a60b98a1848ba?placeholderIfAbsent=true&apiKey=01df688a034145c3bfa1add6af10e91c" alt="Company logo" class="object-contain shrink-0 self-stretch my-auto aspect-[2.2] w-[108px]" />
+            <nav class="flex gap-10 items-center self-stretch my-auto h-5 text-lg font-extrabold min-w-[240px] text-neutral-400">
+                <a href="#" class="self-stretch my-auto text-indigo-900 w-[62px]">Home</a>
+                <a href="#" class="self-stretch my-auto w-[75px]">About Us</a>
+                <a href="#" class="self-stretch my-auto w-[89px]">Contact Us</a>
+            </nav>
+            <div class="flex gap-8 items-center self-stretch my-auto ml-auto">
+                <a href="#" aria-label="Search">
+                    <img loading="lazy" src="https://cdn.builder.io/api/v1/image/assets/TEMP/66c6061f856330fa37699cfc930dffbdec6724804258bd9b22354476c80ab5bc?placeholderIfAbsent=true&apiKey=01df688a034145c3bfa1add6af10e91c" alt="" class="object-contain shrink-0 self-stretch my-auto w-8 aspect-square" />
+                </a>
+                <a href="#" aria-label="User profile">
+                    <img loading="lazy" src="https://cdn.builder.io/api/v1/image/assets/TEMP/aba08bf4b21d6fbd46f1c9e4196c979870e681941c5aff92d2f5fd36d14f08b8?placeholderIfAbsent=true&apiKey=01df688a034145c3bfa1add6af10e91c" alt="" class="object-contain shrink-0 self-stretch my-auto aspect-[1.18] w-[39px]" />
+                </a>
+                <a href="#" aria-label="Shopping cart">
+                    <img loading="lazy" src="https://cdn.builder.io/api/v1/image/assets/TEMP/aa436f9051aae611db7f506125e324e1c91d2bbdcf433c2a3fe4456ffb3f0460?placeholderIfAbsent=true&apiKey=01df688a034145c3bfa1add6af10e91c" alt="" class="object-contain shrink-0 self-stretch my-auto w-10 aspect-square" />
+                </a>
+            </div>
+        </header>
+        <h1 class="mt-28 text-6xl leading-none text-center text-indigo-900 max-md:mt-10 max-md:text-4xl">Cart</h1>
+        <main class="flex flex-col mt-16 w-full text-gray-900 max-w-[1254px] max-md:mt-10 max-md:max-w-full">
+            <div class="flex flex-wrap gap-5 justify-between w-full text-4xl leading-none text-center whitespace-nowrap max-md:mr-2 max-md:max-w-full">
+                <h2>Cart</h2>
+                <div class="flex gap-10 max-md:max-w-full">
+                    <h3>Price</h3>
+                    <h3>Quantity</h3>
+                    <h3>Sub-Total</h3>
+                </div>
+            </div>
+            <hr class="shrink-0 mt-4 h-px border border-solid border-stone-300 max-md:max-w-full" />
+            <article class="flex gap-5 justify-between items-center mt-6 w-full text-3xl leading-none max-md:mr-2.5 max-md:max-w-full">
+                <div class="flex gap-8 items-center self-stretch text-4xl leading-none text-zinc-800">
+                    <img loading="lazy" src="https://cdn.builder.io/api/v1/image/assets/TEMP/85f2d61181334ed32e9086b6c40f92bb7255a2a929552ed33e616394f6e25140?placeholderIfAbsent=true&apiKey=01df688a034145c3bfa1add6af10e91c" alt="Smart Cane For The Blinds" class="object-contain shrink-0 self-stretch my-auto aspect-[1.13] w-[131px]" />
+                    <div class="flex flex-col self-stretch my-auto min-w-[240px] w-[273px]">
+                        <h4>Smart Cane For The Blinds</h4>
+                        <p class="mt-2">Blue</p>
+                    </div>
+                </div>
+                <p class="self-stretch my-auto">1200 EGP</p>
+                <select aria-label="Quantity" class="flex shrink-0 self-stretch my-auto rounded-sm border border-solid border-stone-300 h-[53px] w-[117px]">
+                    <option value="1">1</option>
+                    <option value="2">2</option>
+                    <option value="3">3</option>
+                    <option value="4">4</option>
+                    <option value="5">5</option>
+                </select>
+                <p class="self-stretch my-auto">1200 EGP</p>
+            </article>
+            <hr class="shrink-0 mt-6 h-px border border-solid border-stone-300 max-md:max-w-full" />
+            <article class="flex gap-5 justify-between items-center mt-6 w-full text-3xl leading-none max-md:mr-2.5 max-md:max-w-full">
+                <div class="flex gap-8 items-center self-stretch text-4xl leading-none text-zinc-800">
+                    <img loading="lazy" src="https://cdn.builder.io/api/v1/image/assets/TEMP/85f2d61181334ed32e9086b6c40f92bb7255a2a929552ed33e616394f6e25140?placeholderIfAbsent=true&apiKey=01df688a034145c3bfa1add6af10e91c" alt="Smart Cane For The Blinds" class="object-contain shrink-0 self-stretch my-auto aspect-[1.13] w-[131px]" />
+                    <div class="flex flex-col self-stretch my-auto min-w-[240px] w-[273px]">
+                        <h4>Smart Cane For The Blinds</h4>
+                        <p class="mt-2">Blue</p>
+                    </div>
+                </div>
+                <p class="self-stretch my-auto">1200 EGP</p>
+                <select aria-label="Quantity" class="flex shrink-0 self-stretch my-auto rounded-sm border border-solid border-stone-300 h-[53px] w-[117px]">
+                    <option value="1">1</option>
+                    <option value="2">2</option>
+                    <option value="3">3</option>
+                    <option value="4">4</option>
+                    <option value="5">5</option>
+                </select>
+                <p class="self-stretch my-auto">1200 EGP</p>
+            </article>
+            <hr class="shrink-0 mt-6 h-px border border-solid border-stone-300 max-md:max-w-full" />
+            <div class="flex gap-10 justify-between items-center self-end mt-10 max-w-full w-[437px]">
+                <h3 class="self-stretch my-auto text-5xl max-md:text-4xl">Total</h3>
+                <p class="self-stretch my-auto text-4xl">2400 EGP</p>
+            </div>
+            <p class="self-end mt-4 text-xl">Shipping fee will be calculated at the time of purchase</p>
+            <a href="delivery.html" class="flex relative gap-2.5 justify-center items-start self-end px-12 py-2.5 mt-8 max-w-full text-xl font-medium leading-10 text-white whitespace-nowrap min-h-[60px] w-[437px] max-md:px-5 bg-indigo-900 rounded-md">
+                Checkout
+            </a>
+        </main>
+    </section>
+</body>
+</html>

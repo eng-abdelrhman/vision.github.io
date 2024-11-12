@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://cdn.tailwindcss.com"></script>
+
+    <title>Document</title>
+</head>
+<body>
+    <section class="flex overflow-hidden flex-col items-center px-20 pt-7 pb-32 bg-neutral-100 max-md:px-5 max-md:pb-24">
+        <header class="flex flex-wrap gap-10 items-center self-stretch max-md:max-w-full">
+          <img loading="lazy" src="https://cdn.builder.io/api/v1/image/assets/TEMP/a04a2b749e4988c60373041032c5d96c122ea05ef9806c14983a60b98a1848ba?placeholderIfAbsent=true&apiKey=01df688a034145c3bfa1add6af10e91c" alt="Company logo" class="object-contain shrink-0 self-stretch my-auto aspect-[2.2] w-[108px]" />
+          <nav class="flex gap-10 items-center self-stretch my-auto h-5 text-lg font-extrabold min-w-[240px] text-neutral-400">
+            <a href="#" class="self-stretch my-auto text-indigo-900 w-[62px]">Home</a>
+            <a href="#" class="self-stretch my-auto w-[75px]">About Us</a>
+            <a href="#" class="self-stretch my-auto w-[89px]">Contact Us</a>
+          </nav>
+          <div class="flex gap-8 items-center self-stretch my-auto">
+            <a href="#" aria-label="Social media link"><img loading="lazy" src="https://cdn.builder.io/api/v1/image/assets/TEMP/66c6061f856330fa37699cfc930dffbdec6724804258bd9b22354476c80ab5bc?placeholderIfAbsent=true&apiKey=01df688a034145c3bfa1add6af10e91c" alt="" class="object-contain shrink-0 self-stretch my-auto w-8 aspect-square" /></a>
+            <a href="#" aria-label="Social media link"><img loading="lazy" src="https://cdn.builder.io/api/v1/image/assets/TEMP/aba08bf4b21d6fbd46f1c9e4196c979870e681941c5aff92d2f5fd36d14f08b8?placeholderIfAbsent=true&apiKey=01df688a034145c3bfa1add6af10e91c" alt="" class="object-contain shrink-0 self-stretch my-auto aspect-[1.18] w-[39px]" /></a>
+            <a href="#" aria-label="Social media link"><img loading="lazy" src="https://cdn.builder.io/api/v1/image/assets/TEMP/aa436f9051aae611db7f506125e324e1c91d2bbdcf433c2a3fe4456ffb3f0460?placeholderIfAbsent=true&apiKey=01df688a034145c3bfa1add6af10e91c" alt="" class="object-contain shrink-0 self-stretch my-auto w-10 aspect-square" /></a>
+          </div>
+        </header>
+        <h1 class="mt-28 text-6xl leading-none text-center text-indigo-900 max-md:mt-10 max-md:text-4xl">Checkout</h1>
+        <nav class="flex flex-wrap gap-10 items-center mt-14 text-xl max-md:mt-10 max-md:max-w-full">
+          <div class="flex flex-col self-stretch my-auto text-neutral-400 w-[51px]">
+            <div class="self-center px-1.5 py-3.5 leading-none whitespace-nowrap rounded-md w-[38px]">1</div>
+            <div class="mt-3 leading-none text-center">Delivery</div>
+          </div>
+          <div class="flex flex-col self-stretch my-auto whitespace-nowrap w-[77px]">
+            <div class="self-center px-2 py-3.5 leading-none rounded-md text-neutral-100 w-[38px] bg-indigo-900">2</div>
+            <div class="mt-3 leading-none text-center text-indigo-900">Payment</div>
+          </div>
+          <div class="flex flex-col self-stretch my-auto whitespace-nowrap text-neutral-400 w-[77px]">
+            <div class="self-center px-2 py-3.5 leading-none rounded-md w-[38px]">3</div>
+            <div class="mt-3 w-full leading-none">Confirmation</div>
+          </div>
+        </nav>
+        <main class="flex flex-wrap gap-5 justify-between mt-20 w-full max-w-[1110px] max-md:mt-10 max-md:max-w-full">
+          <h2 class="text-3xl text-gray-900">Payment options</h2>
+          <div class="flex flex-wrap gap-10 justify-between items-center max-md:max-w-full">
+            <h3 class="self-stretch my-auto text-4xl tracking-tighter text-gray-900">Order Summary (1)</h3>
+            <a href="#" class="self-stretch my-auto text-3xl text-indigo-900">edit cart</a>
+          </div>
+        </main>
+        <div class="flex flex-wrap gap-5 justify-between mt-4 w-full max-w-[1110px] max-md:max-w-full">
+          <div class="flex flex-col mt-1">
+            <form class="flex flex-col items-start max-w-full w-[237px]">
+              <div class="flex gap-2.5 max-w-full w-[190px]">
+                <input type="radio" id="cashOnDelivery" name="paymentMethod" class="shrink-0 self-start mt-1.5 w-[18px] h-[18px]" />
+                <div class="flex flex-col">
+                  <label for="cashOnDelivery" class="text-2xl text-gray-900">Cash On Delivery</label>
+                  <p class="text-base leading-relaxed text-neutral-500">Pay with cash upon delivery.</p>
+                </div>
+              </div>
+              <div class="flex gap-2.5 mt-4 max-w-full w-[187px]">
+                <input type="radio" id="creditDebitCard" name="paymentMethod" class="shrink-0 self-start mt-1.5 w-[18px] h-[18px]" />
+                <div class="flex flex-col">
+                  <label for="creditDebitCard" class="text-2xl text-gray-900">Credit/Debit card</label>
+                  <p class="text-base leading-relaxed text-neutral-500">Pay with your Visa, Mastercard.</p>
+                </div>
+              </div>
+            </form>
+            <div class="flex flex-col mt-10 max-w-full w-[222px]">
+              <h3 class="text-3xl text-gray-900">Review & Place Order</h3>
+              <p class="mt-1 text-base text-neutral-500">Please review the order details and payment details before proceeding to confirm your order</p>
+            </div>
+            <form class="flex flex-col mt-6 w-full text-base text-gray-900">
+              <div class="flex gap-4 items-center w-full">
+                <input type="checkbox" id="termsAgreement" class="shrink-0 self-stretch my-auto w-5 h-[19px]" />
+                <label for="termsAgreement" class="my-auto w-[230px]">
+                  I agree to the <a href="#" class="text-indigo-900">Terms & conditions</a>, <a href="#" class="text-indigo-900">Privacy policy</a> & <a href="#" class="text-indigo-900">Return policy</a>
+                </label>
+              </div>
+              <div class="flex gap-4 items-center mt-4 w-full">
+                <input type="checkbox" id="emailSignup" class="shrink-0 self-stretch my-auto w-5 h-[19px]" />
+                <label for="emailSignup" class="self-stretch my-auto w-[301px]">Sign me up to the email list</label>
+              </div>
+              <button type="submit" class="self-center mt-20 text-xs text-white bg-indigo-900 px-4 py-2 rounded max-md:mt-10">Place Order</button>
+            </form>
+          </div>
+          <div class="flex flex-col self-start max-md:max-w-full">
+            <div class="w-full max-md:max-w-full">
+              <div class="flex gap-5 max-md:flex-col">
+                <div class="flex flex-col w-[81%] max-md:ml-0 max-md:w-full">
+                  <div class="flex grow gap-3.5 items-start text-2xl tracking-wider max-md:mt-10">
+                    <img loading="lazy" src="https://cdn.builder.io/api/v1/image/assets/TEMP/f4e7ea8dd2089e1beb9d0bbf8c9921fc2ad8ccdfe06173e50a221204abe37ef1?placeholderIfAbsent=true&apiKey=01df688a034145c3bfa1add6af10e91c" alt="Plastic useless plugs and tubes" class="object-contain shrink-0 max-w-full rounded-sm aspect-[1.13] w-[113px]" />
+                    <div class="flex flex-col">
+                      <p class="leading-7 text-gray-900">Plastic useless plugs and tubes for high-fidelity prototyping. Fit & Eat!</p>
+                      <p class="font-bold text-indigo-900">Qty: 1</p>
+                    </div>
+                  </div>
+                </div>
+                <div class="flex flex-col ml-5 w-[19%] max-md:ml-0 max-md:w-full">
+                  <p class="text-2xl tracking-wider text-gray-900 max-md:mt-10">1200 EGP</p>
+                </div>
+              </div>
+            </div>
+            <hr class="shrink-0 mt-5 max-w-full h-px border border-solid border-stone-300 w-[496px] max-md:mr-2.5" />
+            <div class="flex flex-col items-start self-end mt-6 max-w-full text-2xl text-black whitespace-nowrap w-[309px]">
+              <div class="flex flex-col w-full">
+                <div class="flex gap-10 justify-between items-center w-full">
+                  <p class="self-stretch my-auto">Subtotal</p>
+                  <p class="self-stretch my-auto">$12.00</p>
+                </div>
+                <div class="flex gap-10 justify-between items-center mt-4 w-full">
+                  <p class="self-stretch my-auto">Shipping</p>
+                  <p class="self-stretch my-auto">$2.00</p>
+                </div>
+                <div class="flex gap-10 justify-between items-center mt-4 w-full">
+                  <p class="self-stretch my-auto">Tax</p>
+                  <p class="self-stretch my-auto">$1.00</p>
+                </div>
+              </div>
+              <hr class="shrink-0 mt-4 w-full h-px border border-solid border-stone-300" />
+              <div class="flex gap-10 justify-between items-center mt-4">
+                <p class="self-stretch my-auto">Total</p>
+                <p class="self-stretch my-auto">$15.00</p>
+              </div>
+              <button class="flex justify-center items-center px-12 py-0.5 mt-8 ml-3.5 text-lg font-medium leading-10 text-white min-h-[44px] bg-indigo-900 rounded-md min-w-[240px] w-[296px] max-md:px-5 max-md:ml-2.5">
+                Confirm
+              </button>
+            </div>
+          </div>
+        </div>
+      </section>
+</body>
+</html>

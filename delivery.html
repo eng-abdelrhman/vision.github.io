@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <title>Document</title>
+</head>
+<body>
+    <section class="flex overflow-hidden flex-col items-center px-20 pt-7 pb-40 bg-neutral-100 max-md:px-5 max-md:pb-24">
+        <header class="flex flex-wrap gap-10 items-center self-stretch max-md:max-w-full">
+          <img loading="lazy" src="https://cdn.builder.io/api/v1/image/assets/TEMP/a04a2b749e4988c60373041032c5d96c122ea05ef9806c14983a60b98a1848ba?placeholderIfAbsent=true&apiKey=01df688a034145c3bfa1add6af10e91c" alt="Company logo" class="object-contain shrink-0 self-stretch my-auto aspect-[2.2] w-[108px]" />
+          <nav class="flex gap-10 items-center self-stretch my-auto h-5 text-lg font-extrabold min-w-[240px] text-neutral-400">
+            <a href="#" class="self-stretch my-auto text-indigo-900 w-[62px]">Home</a>
+            <a href="#" class="self-stretch my-auto w-[75px]">About Us</a>
+            <a href="#" class="self-stretch my-auto w-[89px]">Contact Us</a>
+          </nav>
+          <div class="flex gap-8 items-center self-stretch my-auto">
+            <a href="#" aria-label="Social media link"><img loading="lazy" src="https://cdn.builder.io/api/v1/image/assets/TEMP/66c6061f856330fa37699cfc930dffbdec6724804258bd9b22354476c80ab5bc?placeholderIfAbsent=true&apiKey=01df688a034145c3bfa1add6af10e91c" alt="" class="object-contain shrink-0 self-stretch my-auto w-8 aspect-square" /></a>
+            <a href="#" aria-label="Social media link"><img loading="lazy" src="https://cdn.builder.io/api/v1/image/assets/TEMP/aba08bf4b21d6fbd46f1c9e4196c979870e681941c5aff92d2f5fd36d14f08b8?placeholderIfAbsent=true&apiKey=01df688a034145c3bfa1add6af10e91c" alt="" class="object-contain shrink-0 self-stretch my-auto aspect-[1.18] w-[39px]" /></a>
+            <a href="#" aria-label="Social media link"><img loading="lazy" src="https://cdn.builder.io/api/v1/image/assets/TEMP/aa436f9051aae611db7f506125e324e1c91d2bbdcf433c2a3fe4456ffb3f0460?placeholderIfAbsent=true&apiKey=01df688a034145c3bfa1add6af10e91c" alt="" class="object-contain shrink-0 self-stretch my-auto w-10 aspect-square" /></a>
+          </div>
+        </header>
+        <h1 class="mt-28 text-6xl leading-none text-center text-indigo-900 max-md:mt-10 max-md:text-4xl">Checkout</h1>
+        <nav class="flex gap-5 justify-between mt-14 max-w-full text-xl w-[463px] max-md:mt-10">
+          <div class="flex flex-col">
+            <div class="flex flex-col justify-center self-center px-1 py-0.5 leading-none whitespace-nowrap rounded-md text-neutral-100 w-[39px]">
+              <div class="px-1 w-full bg-indigo-900 rounded-md h-[34px]">1</div>
+            </div>
+            <div class="mt-3 leading-none text-center text-indigo-900">Delivery</div>
+          </div>
+          <div class="flex flex-col whitespace-nowrap text-neutral-400">
+            <div class="flex flex-col items-center self-center leading-none w-[51px]">
+              <div class="flex flex-col justify-center px-1 py-0.5 w-full rounded-md">
+                <div class="px-1.5 py-3 rounded-md border border-solid border-neutral-400">2</div>
+              </div>
+            </div>
+            <div class="mt-3 w-full leading-none">Payment</div>
+          </div>
+          <div class="flex flex-col whitespace-nowrap text-neutral-400">
+            <div class="self-center px-4 py-3.5 leading-none rounded-md w-[38px]">3</div>
+            <div class="mt-3 w-full leading-none">Confirmation</div>
+          </div>
+        </nav>
+        <main class="mt-20 w-full max-w-[1120px] max-md:mt-10 max-md:max-w-full">
+          <div class="flex gap-5 max-md:flex-col">
+            <section class="flex flex-col w-6/12 max-md:ml-0 max-md:w-full">
+              <div class="flex flex-col w-full max-md:mt-10 max-md:max-w-full">
+                <div class="flex gap-10 justify-between items-center max-md:mr-0.5 max-md:max-w-full">
+                  <h2 class="self-stretch my-auto text-2xl text-black">Customer information</h2>
+                  <button class="self-stretch my-auto text-xl text-indigo-900">edit</button>
+                </div>
+                <form>
+                  <label for="email" class="sr-only">Email for order confirmation</label>
+                  <input type="email" id="email" placeholder="email for order confirmation" class="px-4 py-3 mt-2 text-xs rounded border border-solid border-stone-300 text-stone-300 max-md:pr-5 max-md:mr-0.5 max-md:max-w-full w-full" required />
+                  <div class="flex gap-8 mt-6 max-md:max-w-full">
+                    <div class="flex flex-col flex-1">
+                      <h3 class="self-start text-2xl text-black">Shipping address</h3>
+                      <label for="firstName" class="sr-only">First Name</label>
+                      <input type="text" id="firstName" placeholder="First Name" class="px-4 py-3 mt-2 text-xs rounded border border-solid border-stone-300 text-stone-300 max-md:pr-5 w-full" required />
+                    </div>
+                    <div class="flex flex-col flex-1 self-start mt-1.5">
+                      <button class="self-end text-base text-indigo-900">edit details</button>
+                      <label for="lastName" class="sr-only">Last Name</label>
+                      <input type="text" id="lastName" placeholder="Last Name" class="px-4 py-3 mt-3 text-xs rounded border border-solid border-stone-300 text-stone-300 max-md:pr-5 w-full" required />
+                    </div>
+                  </div>
+                  <label for="city" class="sr-only">City</label>
+                  <input type="text" id="city" placeholder="city" class="px-4 py-3 mt-4 text-xs whitespace-nowrap rounded border border-solid border-stone-300 text-stone-300 max-md:pr-5 max-md:max-w-full w-full" required />
+                  <label for="phone" class="sr-only">Phone</label>
+                  <input type="tel" id="phone" placeholder="phone" class="px-4 py-3 mt-4 text-xs whitespace-nowrap rounded border border-solid border-stone-300 text-stone-300 max-md:pr-5 max-md:max-w-full w-full" required />
+                  <div class="flex gap-8 mt-4 text-xs whitespace-nowrap text-stone-300 max-md:max-w-full">
+                    <div class="flex flex-col flex-1">
+                      <label for="country" class="sr-only">Country</label>
+                      <input type="text" id="country" placeholder="country" class="px-4 py-3 rounded border border-solid border-stone-300 max-md:pr-5 w-full" required />
+                    </div>
+                    <div class="flex flex-col flex-1">
+                      <label for="state" class="sr-only">State</label>
+                      <input type="text" id="state" placeholder="state" class="px-4 py-3.5 rounded border border-solid border-stone-300 max-md:pr-5 w-full" required />
+                    </div>
+                  </div>
+                  <label for="zip" class="sr-only">Zip Code</label>
+                  <input type="text" id="zip" placeholder="zip" class="px-4 py-3 mt-4 max-w-full text-xs whitespace-nowrap rounded border border-solid border-stone-300 text-stone-300 w-[211px] max-md:pr-5" required />
+                </form>
+              </div>
+            </section>
+            <section class="flex flex-col ml-5 w-6/12 max-md:ml-0 max-md:w-full">
+              <div class="flex flex-col w-full max-md:mt-10 max-md:max-w-full">
+                <div class="flex flex-wrap gap-10 justify-between items-center max-md:max-w-full">
+                  <h2 class="self-stretch my-auto text-4xl tracking-tighter text-gray-900">Order Summary (1)</h2>
+                  <button class="self-stretch my-auto text-3xl text-indigo-900">edit cart</button>
+                </div>
+                <div class="mt-4 w-full max-md:max-w-full">
+                  <div class="flex gap-5 max-md:flex-col">
+                    <div class="flex flex-col w-[81%] max-md:ml-0 max-md:w-full">
+                      <div class="flex grow gap-3.5 items-start text-2xl tracking-wider max-md:mt-10">
+                        <img loading="lazy" src="https://cdn.builder.io/api/v1/image/assets/TEMP/f4e7ea8dd2089e1beb9d0bbf8c9921fc2ad8ccdfe06173e50a221204abe37ef1?placeholderIfAbsent=true&apiKey=01df688a034145c3bfa1add6af10e91c" alt="Plastic useless plugs and tubes" class="object-contain shrink-0 max-w-full rounded-sm aspect-[1.13] w-[113px]" />
+                        <div class="flex flex-col">
+                          <p class="leading-7 text-gray-900">Plastic useless plugs and tubes for high-fidelity prtotyping. Fit & Eat!</p>
+                          <p class="font-bold text-indigo-900">Qty: 1</p>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="flex flex-col ml-5 w-[19%] max-md:ml-0 max-md:w-full">
+                      <p class="text-2xl tracking-wider text-gray-900 max-md:mt-10">1200 EGP</p>
+                    </div>
+                  </div>
+                </div>
+                <hr class="shrink-0 mt-5 max-w-full h-px border border-solid border-stone-300 w-[496px] max-md:mr-2.5" />
+                <div class="flex flex-col items-start self-end mt-6 max-w-full text-2xl text-black whitespace-nowrap w-[309px]">
+                  <div class="flex flex-col w-full">
+                    <div class="flex gap-10 justify-between items-center w-full">
+                      <p class="self-stretch my-auto">Subtotal</p>
+                      <p class="self-stretch my-auto">$12.00</p>
+                    </div>
+                    <div class="flex gap-10 justify-between items-center mt-4 w-full">
+                      <p class="self-stretch my-auto">Shipping</p>
+                      <p class="self-stretch my-auto">$2.00</p>
+                    </div>
+                    <div class="flex gap-10 justify-between items-center mt-4 w-full">
+                      <p class="self-stretch my-auto">Tax</p>
+                      <p class="self-stretch my-auto">$1.00</p>
+                    </div>
+                  </div>
+                  <hr class="shrink-0 mt-4 w-full h-px border border-solid border-stone-300" />
+                  <div class="flex gap-10 justify-between items-center mt-4">
+                    <p class="self-stretch my-auto">Total</p>
+                    <p class="self-stretch my-auto">$15.00</p>
+                  </div>
+                  <a href="payment.html" class="flex relative gap-2.5 justify-center items-start px-12 py-0.5 mt-8 ml-3.5 text-lg font-medium leading-10 text-white min-h-[44px] max-md:px-5 max-md:ml-2.5 bg-indigo-900 rounded-md min-w-[240px] w-[296px]">
+                    Confirm
+                  </a>
+                </div>
+              </div>
+            </section>
+          </div>
+        </main>
+      </section>
+</body>
+</html>
